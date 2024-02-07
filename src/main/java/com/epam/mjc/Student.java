@@ -1,6 +1,7 @@
 package com.epam.mjc;
 
 
+import java.net.InterfaceAddress;
 import java.util.Arrays;
 
 public enum Student {
@@ -44,4 +45,7 @@ public enum Student {
   public int getAge() {
     return age;
   }
+
+
+
 }
