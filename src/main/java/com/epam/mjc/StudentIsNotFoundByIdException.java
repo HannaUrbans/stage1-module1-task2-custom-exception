@@ -1,8 +1,8 @@
 package com.epam.mjc;
 
-public class StudentIsNotFoundByIdException extends Exception {
+public class StudentIsNotFoundByIdException extends IllegalArgumentException {
 
-    public StudentIsNotFoundByIdException(String message, Throwable cause) {
-        super(message, cause);
+    public StudentIsNotFoundByIdException(long id) {
+        super("Could not find student with ID " + id);
     }
 }
